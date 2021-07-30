@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Employee DataBase</title>
+  </head>
+  <body>
+    <div class="signup-form">
+      <form>
+        <h2>Employee DataBase</h2>
+        <hr />
+        <p class="hint-text"></p>
+        <div class="form-group">
+          <div class="row">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                id="emp_name"
+                name="emp_name"
+                value=""
+                placeholder="Employee Name"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input
+                type="number"
+                class="form-control"
+                name="emp_id"
+                id="emp_id"
+                value=""
+                placeholder="Employee ID"
+                required
+              />
+              <input
+                type="text"
+                class="form-control t2"
+                name="emp_des"
+                id="emp_des"
+                value=""
+                placeholder="Designation"
+                required="required"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="Availability">
+              <label>Employee Availability</label>
+              <select name="emp_ava" id="emp_ava">
+                <option value="true">Available</option>
+                <option value="false">Not Available</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn btn-Add btn-lg btn-block"
+            id="btnAddEmp"
+          >
+            Add
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-Reload btn-lg btn-block"
+            id="btnViewAll"
+          >
+            View All
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-Clear-ALL btn-lg btn-block"
+            id="btnClearAll"
+          >
+            Clear All
+          </button>
+        </div>
+        <hr />
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input
+                type="number"
+                class="form-control"
+                name="emp_id"
+                id="Semp_id"
+                value=""
+                placeholder="Employee ID"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn btn-Add btn-lg btn-block"
+            id="btnSEmp"
+          >
+            Search
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-Reload btn-lg btn-block"
+            id="btnUEmp"
+          >
+            Update
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-Clear-ALL btn-lg btn-block"
+            id="btnDEmp"
+          >
+            Delete
+          </button>
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Availability</th>
+              </tr>
+            </thead>
+            <tbody id="mytable"></tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
